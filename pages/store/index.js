@@ -25,6 +25,7 @@ export default function index({items}){
 
 export async function getStaticProps(){
     const res = await getItems();
+    
     return {
         props: {
             items: res,

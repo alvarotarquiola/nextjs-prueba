@@ -1,8 +1,8 @@
 export async function getItems(){
-    const request = await fetch('http://localhost:3000/api/items');
+    const request = await fetch('https://lazzo.co/elvive/datos');
     const items = await request.json();
     
-    return items;
+    return items.data;
 }
 
 export async function getLatestItems(){
